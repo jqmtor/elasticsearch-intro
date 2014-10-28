@@ -1,7 +1,7 @@
 # elasticsearch intro
 
 Brief introduction to the most basic concepts and operations of the elasticsearch fulltext search engine.
-The information contained in this repository is deeply based on the [elasticsearch online docs](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/index.html) and provides only a shallow introduction to some to the concepts there explained.
+The information contained in this repository is deeply based on the [elasticsearch online docs](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/index.html) and provides only a shallow introduction to some of the concepts there explained.
 Concepts like clustering, sharding and replication are not in the scope of this guide.
 
 This content is divided in the following sections:
