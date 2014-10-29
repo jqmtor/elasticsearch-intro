@@ -8,7 +8,7 @@ Elasticsearch favors convention over configuration, making it possible to perfor
 
 #### Request
 
-```
+``` bash
 curl -XPUT 'http://localhost:9200/test?pretty=true'
 ```
 
@@ -16,7 +16,7 @@ In this case, an index named ```test``` should be created. The ```pretty``` para
 
 #### Response
 
-```
+``` json
 {
   "acknowledged" : true
 }
@@ -24,7 +24,7 @@ In this case, an index named ```test``` should be created. The ```pretty``` para
 
 Note that if the index already exists, an error response would be returned:
 
-```
+``` json
 {
   "error" : "IndexAlreadyExistsException[[test] already exists]",
     "status" : 400
@@ -38,7 +38,7 @@ This example includes only a few options.
 
 #### Request
 
-```
+``` bash
 curl -XPOST localhost:9200/other_test?pretty=true -d '{
     "settings" : {
         "number_of_shards" : 1
@@ -56,7 +56,7 @@ curl -XPOST localhost:9200/other_test?pretty=true -d '{
 
 #### Response
 
-```
+``` json
 {
   "acknowledged" : true
 }
