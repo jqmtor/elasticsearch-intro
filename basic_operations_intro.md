@@ -9,7 +9,7 @@ Elasticsearch favors convention over configuration, making it possible to perfor
 #### Request
 
 ```
-curl -XPUT 'http://localhost:9200/test/?pretty=true'
+curl -XPUT 'http://localhost:9200/test?pretty=true'
 ```
 
 In this case, an index named ```test``` should be created. The ```pretty``` parameter tells elasticsearch to provide the response in a human readable format.
