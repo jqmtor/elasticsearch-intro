@@ -1,5 +1,16 @@
 # Basic concepts
 
+Elasticsearch is a flexible search and analytics engine. Here is a list of its main features:
+- Near real-time - there is a latency of approximately one second from the time a document is indexed until it becomes searchable;
+- Distributed - built to scale horizontally with minimal effort;
+- Highly available - clusters have the capability of removing failed nodes and reorganize themselves to ensure availability;
+- Conflict management - optimistic version control can be used where needed;
+- Full text search - multi-language, powerful query language, geolocation, context aware did-you-mean suggestions, autocomplete;
+- Schemaless
+- RESTful-ish
+- Lucene-based
+- Open source
+
 ### Full text, analysis and terms
 
 The following figure illustrates how the concepts relate to each other.
