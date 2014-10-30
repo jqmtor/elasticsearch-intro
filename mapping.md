@@ -34,3 +34,6 @@ curl -XPUT 'http://localhost:9200/test_index/_mapping/test_type?pretty=true' -d 
 }
 ```
 
+When a mapping already exists for the given type, the two mapping definitions are merged. In case of conflict it is possible to define whether it will be ignored or not.
+[This page](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/indices-put-mapping.html) provides some more information on the subject.
+
