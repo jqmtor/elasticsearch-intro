@@ -42,4 +42,5 @@ A [document](#document) is like a *row* in a relational database and it is repre
 
 A [mapping](#mapping) is like a *schema definition* in a relational database.
 Each [index](#index) defines a [mapping](#mapping) which defines each [type](#type) within the [index](#index) and a number of index-wide settings.
+It is the mapping that defines how a document should be mapped to the search engine, i.e., it defines what fields are indexed and if/how they are analyzed.
 

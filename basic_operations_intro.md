@@ -1,64 +1,11 @@
-# Indexation
+This section shows, in a series of annotated examples, how to perform some basic operations on elasticsearch.
+The content is divided by subject and follows a logical sequence. It should be possible to read any subject independently, but some of them will require some knowledge of previous subjects.
 
-## Create index
-
-Elasticsearch favors convention over configuration, making it possible to perform most operations without including any configuration at all.
-
-### Create index with default configuration
-
-#### Request
-
-``` bash
-curl -XPUT 'http://localhost:9200/test?pretty=true'
-```
-
-In this case, an index named ```test``` should be created. The ```pretty``` parameter tells elasticsearch to provide the response in a human readable format.
-
-#### Response
-
-``` json
-{
-  "acknowledged" : true
-}
-```
-
-Note that if the index already exists, an error response would be returned:
-
-``` json
-{
-  "error" : "IndexAlreadyExistsException[[test] already exists]",
-    "status" : 400
-}
-```
-
-### Create index providing configuration
-
-There is a large set of possibilities to configure an index and all the information is described [here](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/index-modules.html).
-This example includes only a few options.
-
-#### Request
-
-``` bash
-curl -XPOST localhost:9200/other_test?pretty=true -d '{
-    "settings" : {
-        "number_of_shards" : 1
-    },
-    "mappings" : {
-        "type1" : {
-            "_source" : { "enabled" : false },
-            "properties" : {
-                "field1" : { "type" : "string", "index" : "not_analyzed" }
-            }
-        }
-    }
-}'
-```
-
-#### Response
-
-``` json
-{
-  "acknowledged" : true
-}
-```
+- [Indexation](indexation.md)
+- [Mapping](mapping.md)
+- [
+  - Querying
+  - Sorting
+  - Scoring
+  - (?) Boosting
 
