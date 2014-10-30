@@ -15,7 +15,7 @@ Elasticsearch is a flexible search and analytics engine. Here is a list of its m
 
 The following figure illustrates how the concepts relate to each other.
 
-![full_text-analysis-terms](images/full_text-analysis-terms.png)
+![Analysis](images/analysis.png)
 
 Full text is any kind of ordinary and unstructured text, like the value of a field in the database or this sentence.
 By default, full text is converted into terms, through a process called analysis.
