@@ -5,7 +5,5 @@ The content is divided by subject and follows a logical sequence. It should be p
 - [Indexation](indexation.md)
 - [Mapping](mapping.md)
 - [Querying](querying.md)
-- Sorting
-- Scoring
-- (?) Boosting
+- [Facets](facets.md)
 
