@@ -8,7 +8,3 @@ This content is divided in the following sections:
 
 - [Basic concepts and terminology](basic_concepts.md)
 - [Basic operations with examples](basic_operations_intro.md)
-- [Introduction to filters and facets](filters_and_facets_intro.md)
-  - Filters
-  - Filters vs Queries
-  - Facets
